@@ -23,29 +23,61 @@
             flex-direction: column;
         }
         .menu {
-            border: 0.2rem solid yellow
+            border: 0.2rem solid yellow;
+            width: 15rem;
         }
-        .principal {
-            border: 0.2rem solid aqua
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 2rem;
+            height: 2rem;
+            padding: 0.2rem;
+            border-radius: 100%;
+            background-color: blue;
+            color:white;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 1rem;
+        }
+        .titulo {
+            color: #cecdcd;
+            font-size: 2rem;
         }
 
-        #cabecalho {
-            border: 0.2rem solid red;
+        .principal {
+            border: 0.2rem solid aqua;
+            flex: 1;
         }
+
+      
 
         #rodape {
+            height: 5rem;
             border: 0.2rem solid blue;
         }
 
         .container {
             flex: 1;
-            border: 0.2rem solid green
+            border: 0.2rem solid green;
+            display: flex;
+        }
+          #cabecalho {
+            align-items: center;
+            height: 5rem;
+            display: flex;
+            background-color: #0f172a;
+            padding: 1rem;
         }
     </style>
 </head>
 
 <body>
-    <header id="cabecalho">Meu site</header>
+    <header id="cabecalho">
+            <div class="logo">G</div>
+    <h1 class="titulo">Meu Site</h1>
+    </header>
     <div class="container">
         <nav class="menu">Menu</nav>
         <main class="principal">Conteudo Principal</main>
